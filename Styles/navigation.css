@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Syne:wght@400..800&display=swap');
+
+:root{
+    --purple-light: #E0AAFF;
+    --purple-midlight: #C77DFF;
+    --purple-midlight-shadow: #c77dff9e;
+    --purple-dark: #3C096C;
+    --base-white: #fefbff;
+    --base-black: #131313;
+    --box-shadow: #d1d1d1;
+    --font-main: "Inter", sans-serif;
+    --font-extra: "Syne", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--base-white);
+}
+.navigation-box {
+    max-width: 95%;
+    height: 80px;
+    background-color: var(--base-white);
+    border-bottom: 1.5px solid var(--box-shadow);
+    margin-inline: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.school-logo img{
+    width: 60px;
+    height: 67px;
+}
+.navigation-links{
+    width: 500px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation-links a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: var(--font-main);
+    cursor: pointer;
+    color: var(--base-black);
+    font-size: 15px;
+    transition: .2s;
+}
+.active {
+    color: var(--purple-midlight);
+}
+.navigation-links a:hover {
+    background-color: var(--purple-midlight);
+    color: var(--base-white);
+    transition: .2s;
+}
+.members-highlight {
+    background-color: var(--purple-midlight);
+    color: var(--base-white);
+}
+@media screen and (max-width: 768px) {
+    .navigation-box {
+        margin-top: 0;
+        height: 140px;
+    }
+    .navigation-links{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        top: 60px;
+        left: -50px;
+    }
+    .navigation-links a{
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+}
